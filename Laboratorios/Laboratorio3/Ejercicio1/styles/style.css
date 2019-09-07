@@ -1,0 +1,82 @@
+body{
+    background-color: dimgray;
+    color: antiquewhite;
+}
+
+.grid_container{
+    display: grid;
+    margin: 1rem auto;
+    width: 50%;
+    grid-template-columns: repeat(8, 10rem);
+    grid-auto-rows: minmax(10rem, 10rem);
+    grid-gap: 0.1rem;
+    grid-auto-flow: row dense;
+    justify-content: center;
+}
+img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h1{
+    color: darkslateblue;
+    text-align: center;
+    font-size: 5rem;
+}
+
+.one{
+    grid-area: span 2 / span 8;
+}
+
+.two{
+    grid-area: span 4 / span 2;
+}
+
+.three{
+    grid-area: span 1 / span 1;
+}
+
+.four{
+    grid-area: span 1 / span 1;
+}
+
+.five{
+    grid-area: span 2 / span 4;
+}
+
+.six{
+    grid-area: span 1 / span 2;
+}
+
+.seven{
+    grid-area: span 2 / span 2;
+}
+
+.eight{
+    grid-area: span 2 / span 1;
+}
+
+.nine{
+    grid-area: span 1 / span 1;
+}
+
+.ten{
+    grid-area: span 1 / span 1;
+}
+
+.eleven{
+    grid-area: span 1 / span 1;
+}
+
+.twelve{
+    grid-area: span 1 / span 3;
+}
+
+.thirteen{
+    grid-area: span 2 / span 4;
+}
+
+.fourteen{
+    grid-area: span 2 / span 4;
+}

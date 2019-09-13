@@ -1,0 +1,44 @@
+$margin: 15px 15px;
+$center-align: center;
+
+@mixin img-background {
+    background-image: url("../images/fondo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: antiquewhite;
+}
+
+@mixin flex-center($direction, $margin, $wrap, $m_align, $c_align) {
+    display: flex;
+    margin: $margin;
+    flex-flow: $direction $wrap;
+    justify-content: $m_align;
+    align-items: $c_align;
+}
+
+@mixin flex-extremos($justify) {
+    display: flex;
+    margin: 0.1rem auto;
+    justify-content: $justify;
+    
+}
+
+body{
+    @include img-background();
+}
+
+
+.flex_container_central{
+    @include flex-center(row, $margin, wrap, $center-align, $center-align);
+    text-align: $center-align;
+    padding:10rem;
+    size: 10em;
+}
+
+.flex_container_arriba{
+    @include flex-extremos(flex-end);
+}
+
+.flex_container_abajo{
+    @include flex-extremos(space-between);
+}

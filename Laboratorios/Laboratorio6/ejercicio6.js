@@ -1,16 +1,14 @@
-function ordenArray(array){
-    repeat(array.lengh -1 , i=> {
-        if(array[i]>array[i+1]){
-            
+function ordenarAscendente(array = [1,8,6,2,4,5]){
+    let a,b;
+    for(j=0; j < array.length -1 < j++){
+        for(i=0; i < array.length -1; i++){
+            if(array[i] > array[i+1]){
+                a = array[i];
+                b = array[i];
+                array[i] = b;
+                array[i+1] = a;
+            }
         }
-    });
-}
-
-let arreglo3 = [4,5,9,8,1]
-ordenArray(arreglo3);
-
-function repeat(n,action){
-    for(let i=0; i < n; i++){
-      action(i);
     }
-  }
+    return console.log(array);
+}

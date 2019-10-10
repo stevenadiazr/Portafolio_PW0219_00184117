@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/Tareas/Tarea2/css/style.css">
+    <title>Journal Register</title>
+</head>
+<body>
+    <div class="container">
+        <br>
+        <div class="jumbotron">
+            <h1>
+                Journal Register
+            </h1>
+
+            <div class="form-group">
+                <label for="event" class="col-sm-2 col-form-label">Evento 1: </label><br>
+                <input class="form-control" type="text" name="event" id="event_field">
+                <label for="event" class="col-sm-2 col-form-label">Evento 2: </label><br>
+                <input class="form-control" type="text" name="event" id="event_field">
+                <label for="event" class="col-sm-2 col-form-label">Evento 3: </label><br>
+                <input class="form-control" type="text" name="event" id="event_field">
+            </div>
+
+            <div class="form-group">
+                <label for="schedule">Seleccione el dia:</label>
+                <select name="schedule" class="form-control" id="schedule_field">
+                    <option>Lunes</option>
+                    <option>Martes</option>
+                    <option>Miércoles</option>
+                    <option>Jueves</option>
+                    <option>Viernes</option>
+                    <option>Sabado</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <div class="custom-control custom-switch">
+                    <input type="checkbox" class="custom-control-input" id="late_switch">
+                    <label class="custom-control-label" for="late_switch">Hubo accidente este dia?</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <button type="button" class="btn btn-danger" id="submit_btn" disabled>Agregar</button>
+            </div>
+        </div>
+
+        <hr>
+
+        <section>
+            <table class="table table-hover">
+                <thead>
+                    <tr class="table-dark">
+                        <th scope="col">Evento 1</th>
+                        <th scope="col">Evento 2</th>
+                        <th scope="col">Evento 3</th>
+                        <th scope="col">Fecha</th>
+                        <th scope="col">Hubo accidente?</th>
+                    </tr>
+                </thead>
+                <tbody id="table_body">
+
+                </tbody>
+            </table>
+        </section>
+    </div>
+    <script src="/Tareas/Tarea2/js/main.js"></script>
+</body>
+</html>

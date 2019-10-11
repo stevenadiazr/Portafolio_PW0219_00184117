@@ -4,7 +4,7 @@ let late_switch = document.querySelector("#late_switch");
 let submit_btn = document.querySelector("#submit_btn");
 
 let table_body = document.querySelector("#table_body");
-let carnet_regex = new RegExp('[0-9]{8}');
+let carnet_regex = new RegExp("^[0-9]{8}$");
 
 /*Se dice esquedchul*/ 
     let add_student = (carnet, schedule, late)=>{

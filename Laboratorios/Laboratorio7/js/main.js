@@ -14,7 +14,7 @@ let carnet_regex = new RegExp('[0-9]{8}');
     new_row.className = "table_active;"
     new_row.innerHTML = `<th scope='row'>${carnet}</th>
     <td>${schedule}</td>
-    <td>${datetime}</td>
+    <td>${datetime.toLocaleString()}</td>
     <td>${late}</td>`;
 
     table_body.appendChild(new_row);

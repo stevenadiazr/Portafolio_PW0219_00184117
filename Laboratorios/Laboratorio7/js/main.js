@@ -4,16 +4,17 @@ let late_switch = document.querySelector("#late_switch");
 let submit_btn = document.querySelector("#submit_btn");
 
 let table_body = document.querySelector("#table_body");
-let carnet_regex = new RegExp('[0-9]{8}');
+let carnet_regex = new RegExp("^[0-9]{8}$");
 
 /*Se dice esquedchul*/ 
     let add_student = (carnet, schedule, late)=>{
     let new_row = document.createElement("tr");
     let datetime = new Date;
+
     new_row.className = "table_active;"
     new_row.innerHTML = `<th scope='row'>${carnet}</th>
     <td>${schedule}</td>
-    <td>${datetime.toLocaleString}</td>
+    <td>${datetime.toLocaleString()}</td>
     <td>${late}</td>`;
 
     table_body.appendChild(new_row);
@@ -54,3 +55,6 @@ carnet_field.addEventListener("keyup", (event)=>{
     }                                   
 })
 
+window.onload=()=>{
+
+}

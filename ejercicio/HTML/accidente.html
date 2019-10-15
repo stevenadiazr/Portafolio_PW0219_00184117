@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/ejercicio/css/bootstrap.css">
+    <title>Journal</title>
+</head>
+<body>
+
+<div class="container">
+
+ <fieldset class="jumbotron">
+
+    <h1>Journal</h1>
+
+<hr>
+
+    <legend>
+            Eventos diarios:
+    </legend>
+
+    <div class="form-group">
+        
+        <br>
+        <label for="evento" class="col-sm-2 col-form-label">Evento: </label>  <input class="form-group" type="text" name="plainText" placeholder="Comer" id="event_field"> 
+        <br>
+    </div>
+    
+    <div class="form-group">
+        <label for="schedule">Seleccione el horario:</label>
+        <select name="schedule" class="form-control" id="schedule_field">
+            <option>Lunes </option>
+            <option>Martes</option>
+            <option>Miércoles</option>
+            <option>Jueves</option>
+            <option>Viernes</option>
+            <option>Sabado</option>
+            <option>Domingo</option>
+        </select>
+    </div>
+
+
+    <div class="form-group">
+            <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="accid_switch">
+                <label class="custom-control-label" for="accid_switch">Hubo algun accidente?</label>
+            </div>
+    </div>
+    
+    <div class="form-group">
+        <button type="button" class="btn btn-danger" id="submitEvents_btn" disabled>Nuevo Dia</button>
+    </div>
+    </div>  
+    
+
+</fieldset>
+
+
+
+<section>
+        <table class="table table-hover">
+            <thead>
+                <tr class="table-dark">
+                    <th scope="col">Evento:</th>
+                    <th scope="col">Dia:</th>
+                    <th scope="col">Accidente?</th>
+                </tr>
+            </thead>
+            <tbody id="table_body">
+
+            </tbody>
+        </table>
+    </section>
+</div>
+
+</div>
+
+
+<script src="/ejercicio/js/main.js"></script>
+</body>
+</html>

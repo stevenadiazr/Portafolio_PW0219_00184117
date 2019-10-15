@@ -7,7 +7,7 @@ let table_body = document.querySelector("#table_body");
 let carnet_regex = new RegExp('[0-9]{8}');
 
 /*Se dice esquedchul*/ 
-let add_student = (carnet, schedule, late)=>{
+    let add_student = (carnet, schedule, late)=>{
     let new_row = document.createElement("tr");
     let datetime = new Date;
     new_row.className = "table_active;"
@@ -33,7 +33,7 @@ submit_btn.addEventListener("click", ()=>{
     let late = parseLateSwitch(late_switch.checked);
 
     if(carnet_regex.test(carnet)){
-        addStudent(carnet,schedule, late);
+        add_student(carnet,schedule, late);
     } else {
         alert("Formato del carnet no valido");
     }

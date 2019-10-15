@@ -1,0 +1,23 @@
+.grid_container{
+    display: grid;
+    margin: 1rem auto;
+    width: 50%;
+    grid-template-columns: repeat(2, 10rem);
+    grid-auto-rows: minmax(10rem, 10rem);
+    grid-gap: 0.1rem;
+    grid-auto-flow: row dense;
+    justify-content: center;
+}
+
+.menu{
+    grid-area: 1 / 1 / span 2 / span 1;
+}
+
+.articles{
+    grid-area: 1 / 2 / span 1 / span 1;
+}
+
+.imagenes{
+    width: 125px;
+    height: 100px;;
+}

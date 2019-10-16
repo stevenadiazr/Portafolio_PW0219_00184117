@@ -35,17 +35,18 @@ div.grid_container div.articles{
     padding: 1rem 1rem 1rem 2.75rem;
 }
 
-.imagenes{
-    width: 100%;
-    color: rgb(12, 0, 90);
-    text-align: center;
-}
-
 .imagenes.menu{
     width: 15rem;
     color: rgb(12, 0, 90);
     text-align: center;
     padding: 0 1rem;
+}
+
+.imagenes.articulo{
+    width: 100%;
+    height: 40rem;
+    color: rgb(12, 0, 90);
+    text-align: center;
 }
 
 .imagenes.menu:hover{

@@ -65,13 +65,3 @@ dia5.addEventListener("click", ()=>{
     article5.setAttribute("style","display:none")
     article6.setAttribute("style","display:block")
 })
-
-/*
-let menu = document.querySelector("#menu");
-let article = document.querySelector(".article");
-
-
-menu.addEventListener("click", ()=>{
-    article.classList.toggle('hide-1');
-})
-*/
